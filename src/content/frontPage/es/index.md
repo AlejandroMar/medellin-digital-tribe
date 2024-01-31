@@ -1,7 +1,7 @@
 ---
 headMetaData: 
-    title: título de inicio
-    description: esta es la página de inicio en español
+    title: Medellín Digital Tribe
+    description: Una comunidad de emprendedores y artistas digitales
     
     
 title: "Emparejamiento de fuentes hecho simple"
