@@ -4,7 +4,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://yoursite.com",
+  site: "https://medellindigitaltribe.com",
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
