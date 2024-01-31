@@ -1,21 +1,44 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-
+import heroImg from "../assets/hero-small.png";
 const {
   pageContent: { data },
 } = Astro.props;
 ---
 
 <Layout headMetaData={data.headMetaData}>
-  <div>
-    <h1 class="font-titles text-5xl font-extrabold">
-      {data.title}
-    </h1>
-    <p class="mt-4 font-subtitles font-bold">
-      {data.subtitle}
-    </p>
-    <p class="text mt-4 font-paragraphs font-light">
-      {data.paragraph}
-    </p>
-  </div>
+  <section
+    class="relative flex h-screen items-center bg-background_cyan-500 text-white"
+  >
+    <div class="container relative mx-auto px-4" data-pg-collapsed>
+      <div class="-mx-4 flex flex-wrap" data-pg-collapsed>
+        <div class="mx-auto w-full px-4 text-center lg:w-8/12">
+          <p class="text-shadow-small mb-2 font-medium uppercase text-white">
+            Bienvenido a
+          </p>
+          <h1 class="text-shadow mb-4 text-6xl font-extrabold">
+            Medellín Digital Tribe
+          </h1>
+          <p class="text-shadow-small mb-6 text-xl font-medium">
+            Una comunidad de emprendedores y artistas digitales
+          </p>
+          <a
+            href="#"
+            class="inline-block rounded-sm bg-yellow-500 px-5 py-2 font-light uppercase text-white hover:bg-green-500"
+            >Únete a la comuidad</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .text-shadow {
+    text-shadow: 2px 2px 0px black;
+  }
+  .text-shadow-small {
+    text-shadow: 0.5px 0.5px black;
+  }
+</style>
